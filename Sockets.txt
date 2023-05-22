@@ -1,0 +1,25 @@
+import socket
+
+a = socket.socket(socket_family, socket_class, protocol=0)
+socket_family: AF_INET (remoto)/ AF_UNIX (local)
+socket_type: SOCK_STREAM (for TCP, más común)/ SOCK_DGRAM (for UDT)
+TCP = conversación entre cliente y servidor, se pueden enviar datos más pesados,
+	ordenado
+	 Before it transmits data, TCP establishes a connection between a source 
+	and its destination, which it ensures remains live until communication begins.
+	Mientras la IP es una dirección, TCP es garantía de que algo llegará desde un 
+	lugar hacia otro previo reconocimiento de la IP
+UDP = envías una solicitud, te responden y termina, te responden sin un orden, 
+	tampoco si faltan datos
+
+recv se utiliza para recuperar datos de un socket (se aplica para transmisiones TCP y UDP).
+
+Primero hay que conectarse, luego enviar requerimientos al servidor (requests como GET)
+
+Se ha limita a 512 Bytes para optimizar el rendimiento y generar tráfico de red mínimo.
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/92360/por-que-dns-a-traves-de-udp-tiene-512-bytes-limite
+
+https://www.datacamp.com/tutorial/git-push-pull
+
+Práctica en aula, grupal (maybe), estos temas, los primeros tienen más puntaje, próx semana, lunes
